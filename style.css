@@ -14,27 +14,75 @@ body{
     width: 20%;
     margin-right:16%;
 }
-#grid{
+#grid {
     float: right;
     width: 80%;
     text-align: center;
     border: 1px solid black;
+
 }
 
-table{
-    border: 1px solid black;
+#grid table{
+    border: 1px null ;
     border-radius: 10px;
     border-collapse: collapse;
    
 }
+
 td{
     border: 1px solid rgb(252, 250, 250);
     padding: 25px;
     color: white;
+    /* padding: 0%; */
 }
 .red{
     background-color: red;
 }
 .blue{
     background-color: rgb(73, 51, 94);
+}
+.red:hover{
+    background-color: hsl(0, 49%, 64%);
+}
+.blue:hover{
+    background-color: hsl(271, 18%, 40%);
+}
+
+button{
+    background: none;
+    border: 0;
+    z-index: 1;
+    
+}
+.o,.x{
+    margin: 0%;
+    color: red;
+    
+}
+
+.red button{
+    color: red;
+}
+.blue button{
+    color: rgb(73, 51, 94);
+}
+ .o:hover{
+   color: white;
+}
+.x:hover{
+    color: white;
+} 
+/* .o:not(:hover){
+    visibility: hidden;
+    
+ }
+ .x:not(:hover){
+     visibility: hidden;
+     
+ } */
+.o:active{
+    background-color: aliceblue;
+}
+.x:active{
+    background-color: aliceblue;
 }
